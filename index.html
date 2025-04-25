@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="hands-display">
+            <div class="hand player-hand">
+                <i class="fa-solid fa-hand-fist"></i>
+                <p>Player</p>
+            </div>
+            <div class="hand computer-hand">
+                <i class="fa-solid fa-hand-fist"></i>
+                 <p>Computer</p>
+            </div>
+        </div>
+
+        <div class="result-area">
+            <p class="result-text">Let's Play!!</p>
+        </div>
+
+        <div class="options-area">
+            <button class="option" data-option="rock">
+                <i class="fa-solid fa-hand-back-fist"></i>
+                <span>Rock</span>
+            </button>
+            <button class="option" data-option="paper">
+                <i class="fa-solid fa-hand"></i>
+                <span>Paper</span>
+            </button>
+            <button class="option" data-option="scissors">
+                <i class="fa-solid fa-hand-scissors"></i>
+                 <span>Scissors</span>
+            </button>
+        </div>
+         <div class="score-area" style="display: none;">
+            <p>Score: Player <span id="player-score">0</span> - <span id="computer-score">0</span> Computer</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
